@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3798FB7528D98256004303D1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FB7428D98256004303D1 /* CustomButton.swift */; };
 		37A0DA4828D93726008EF0FC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0DA4728D93726008EF0FC /* CustomTextField.swift */; };
 		37AF921D28D80460008855FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF921C28D80460008855FB /* AppDelegate.swift */; };
 		37AF921F28D80460008855FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF921E28D80460008855FB /* SceneDelegate.swift */; };
@@ -14,9 +15,11 @@
 		37AF922428D80460008855FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AF922228D80460008855FB /* Main.storyboard */; };
 		37AF922628D80461008855FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AF922528D80461008855FB /* Assets.xcassets */; };
 		37AF922928D80461008855FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AF922728D80461008855FB /* LaunchScreen.storyboard */; };
+		37D4DA6128D974A100015E05 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4DA6028D974A100015E05 /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3798FB7428D98256004303D1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		37A0DA4728D93726008EF0FC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		37AF921928D80460008855FB /* Terrapages_SignIn_Email.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terrapages_SignIn_Email.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AF921C28D80460008855FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		37AF922528D80461008855FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37AF922828D80461008855FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37AF922A28D80461008855FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D4DA6028D974A100015E05 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXGroup;
 			children = (
 				37A0DA4728D93726008EF0FC /* CustomTextField.swift */,
+				37D4DA6028D974A100015E05 /* CustomLabel.swift */,
+				3798FB7428D98256004303D1 /* CustomButton.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -151,8 +157,10 @@
 			files = (
 				37A0DA4828D93726008EF0FC /* CustomTextField.swift in Sources */,
 				37AF922128D80460008855FB /* ViewController.swift in Sources */,
+				3798FB7528D98256004303D1 /* CustomButton.swift in Sources */,
 				37AF921D28D80460008855FB /* AppDelegate.swift in Sources */,
 				37AF921F28D80460008855FB /* SceneDelegate.swift in Sources */,
+				37D4DA6128D974A100015E05 /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

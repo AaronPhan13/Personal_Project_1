@@ -16,68 +16,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignIn" translatesAutoresizingMaskIntoConstraints="NO" id="aSq-aM-D5W">
-                                <rect key="frame" x="0.0" y="47" width="390" height="563"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-nC-sL1">
-                                <rect key="frame" x="39" y="630" width="312" height="160"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-nC-sL1">
+                                <rect key="frame" x="21.333333333333343" y="404.66666666666669" width="347.33333333333326" height="105.33333333333331"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username or Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfl-Ig-Ohq" customClass="CustomTextField" customModule="Terrapages_SignIn_Email" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="312" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username or Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-Ca-hiF" customClass="CustomTextField" customModule="Terrapages_SignIn_Email" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="347.33333333333331" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="eRD-YF-DOv"/>
+                                            <constraint firstAttribute="height" constant="34" id="LNS-cP-pGk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemPurpleColor"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
-                                                <color key="value" systemColor="systemGray2Color"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="2"/>
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGray3Color"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftOffset">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Username or Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-Vk-644">
-                                        <rect key="frame" x="0.0" y="60" width="312" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Username or Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwL-83-scu" customClass="CustomLabel" customModule="Terrapages_SignIn_Email" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="46" width="347.33333333333331" height="13.333333333333336"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="1lw-ed-31w"/>
+                                            <constraint firstAttribute="height" constant="13.33" id="lB2-Hb-zuH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftOffset">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3I-1k-err">
-                                        <rect key="frame" x="0.0" y="120" width="312" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nos-XB-MEv" customClass="CustomTextField" customModule="Terrapages_SignIn_Email" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.333333333333314" width="347.33333333333331" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="4yI-3w-Wd4"/>
+                                            <constraint firstAttribute="height" constant="34" id="Qqu-EM-dWc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftOffset">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGray3Color"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="dtL-I9-rkf"/>
-                                </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignIn" translatesAutoresizingMaskIntoConstraints="NO" id="aSq-aM-D5W">
+                                <rect key="frame" x="0.0" y="47" width="390" height="337.66666666666669"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evn-NB-X2Q" customClass="CustomButton" customModule="Terrapages_SignIn_Email" customModuleProvider="target">
+                                <rect key="frame" x="21.333333333333343" y="547" width="347.33333333333326" height="34.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eh4-nC-sL1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.89" id="0KU-5u-fPX"/>
+                            <constraint firstItem="evn-NB-X2Q" firstAttribute="top" secondItem="eh4-nC-sL1" secondAttribute="bottom" constant="37" id="BQO-wk-YJ4"/>
                             <constraint firstItem="aSq-aM-D5W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CVB-mU-eA9"/>
-                            <constraint firstItem="eh4-nC-sL1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="EeC-rw-eut"/>
-                            <constraint firstItem="aSq-aM-D5W" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" priority="750" id="Jya-S5-KGu"/>
+                            <constraint firstItem="evn-NB-X2Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GLh-b3-xwg"/>
+                            <constraint firstItem="aSq-aM-D5W" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Jya-S5-KGu"/>
                             <constraint firstItem="aSq-aM-D5W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kgp-zi-36j"/>
+                            <constraint firstItem="eh4-nC-sL1" firstAttribute="top" secondItem="aSq-aM-D5W" secondAttribute="bottom" constant="20" id="OQ2-Gu-lQs"/>
                             <constraint firstItem="aSq-aM-D5W" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="emL-yS-jxg"/>
-                            <constraint firstItem="eh4-nC-sL1" firstAttribute="top" secondItem="aSq-aM-D5W" secondAttribute="bottom" constant="20" id="iXO-Sj-wfb"/>
-                            <constraint firstItem="eh4-nC-sL1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r6O-IE-fFI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eh4-nC-sL1" secondAttribute="bottom" constant="20" id="svJ-bn-ixW"/>
+                            <constraint firstItem="eh4-nC-sL1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n11-DR-aYk"/>
+                            <constraint firstItem="evn-NB-X2Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.89" id="uVp-ID-SGq"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -87,8 +111,17 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="lfl-Ig-Ohq">
-            <size key="intrinsicContentSize" width="142" height="18.666666666666668"/>
+        <designable name="aUb-Ca-hiF">
+            <size key="intrinsicContentSize" width="198" height="18.666666666666668"/>
+        </designable>
+        <designable name="evn-NB-X2Q">
+            <size key="intrinsicContentSize" width="75.666666666666671" height="34.333333333333336"/>
+        </designable>
+        <designable name="nos-XB-MEv">
+            <size key="intrinsicContentSize" width="82.666666666666671" height="18.666666666666668"/>
+        </designable>
+        <designable name="vwL-83-scu">
+            <size key="intrinsicContentSize" width="157.66666666666666" height="13.333333333333334"/>
         </designable>
     </designables>
     <resources>
@@ -96,11 +129,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

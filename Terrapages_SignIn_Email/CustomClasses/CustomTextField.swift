@@ -9,11 +9,17 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class CustomTextField: UITextField {
+class CustomTextField : UITextField {
     
     @IBInspectable var cornerRadius : CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
+        }
+    }
+    
+    @IBInspectable var borderWidth : CGFloat = 0 {
+        didSet {
+            layer.borderWidth = borderWidth
         }
     }
     
@@ -42,10 +48,10 @@ class CustomTextField: UITextField {
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: leftOffset, dy: topOffset)
+        super.textRect(forBounds: bounds.insetBy(dx: leftOffset, dy: topOffset))
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: leftOffset, dy: topOffset)
+        super.textRect(forBounds: bounds.insetBy(dx: leftOffset, dy: topOffset))
     }
 }
